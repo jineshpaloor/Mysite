@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jinesh Narayanan</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"/>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2><a href="/">Jinesh Narayanan</a></h2>
+        <p>Email: jineshpaloor@gmail.com</p>
+        <p>Contact: 07208384714</p>
+      </header>
+      {% block content %}{% endblock %}
+      <footer>
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="http://github.com/jineshpaloor">github</a>
+      </footer>
+    </div>
+  </body>
+</html>
