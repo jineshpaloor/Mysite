@@ -1,5 +1,13 @@
+.l {float: left;}
+.r {float: right;}
+.dib {display: inline-block;}
+.w70{ width:70%;}
+.w30{ width:30%;}
+.tac{ text-align: center;}
+
 header {
-    height: 100px;
+    height: 60px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -16,6 +24,15 @@ footer {
 }
 
 .container {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px auto;
+    width: 900px;
+}
+
+.header-contact {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-contact p{
+    margin: 0px;
 }

@@ -9,10 +9,12 @@
   <body>
     <div class="container">
       <header>
-        <h2><a href="/">Jinesh Narayanan</a></h2>
-        <div>
+        <div class="header-name w70 l">
+            <h1><a href="/">Jinesh Narayanan</a></h1>
+        </div>
+        <div class="header-contact w30 r">
             <p><strong>Email:</strong>jineshpaloor@gmail.com</p>
-            <p><strong>Contact:</strong> 07208384714</p>
+            <p><strong>Mobile:</strong> 07208384714</p>
         </div>
       </header>
         <div class="navbar navbar-inverse">
@@ -24,17 +26,23 @@
               <li class="divider-vertical"></li>
               <li><a href="#">Blog</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#">Projects</a></li>
+              <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a tabindex="-1" href="#">Graph-Coloring</a></li>
+                        <li><a tabindex="-1" href="#">Find Shortest Path</a></li>
+                        <li><a tabindex="-1" href="#">Url Shortening</a></li>
+                    </ul>
+              </li>
               <li class="divider-vertical"></li>
               <li><a href="#">Social</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">Resume</a></li>
             </ul>
           </div>
-        </div>
-        <div class="content">
-            <p>Content here</p>
-        </div>
-      <footer>
-      </footer>
+      </div>
+      {% block content %}{% endblock %}
+      <footer></footer>
     </div>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
