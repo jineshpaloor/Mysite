@@ -4,21 +4,40 @@
     <meta charset="utf-8">
     <title>Jinesh Narayanan</title>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"/>
   </head>
   <body>
     <div class="container">
       <header>
         <h2><a href="/">Jinesh Narayanan</a></h2>
-        <p>Email: jineshpaloor@gmail.com</p>
-        <p>Contact: 07208384714</p>
+        <div>
+        <span><strong>Email:</strong>jineshpaloor@gmail.com</span>
+        <span><strong>Contact:</strong> 07208384714</span>
+        </div>
       </header>
-      {% block content %}{% endblock %}
+        <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+            <!--Sidebar content-->
+                {% block sidebar_content %}{% endblock %}
+            </div>
+            <div class="span9">
+            <!--Body content-->
+                {% block body_content %}{% endblock %}
+            </div>
+        </div>
+        </div>
       <footer>
         <a href="">About</a>
         <a href="">Blog</a>
         <a href="http://github.com/jineshpaloor">github</a>
       </footer>
     </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap-dropdown.js') }}"></script>
+    <script type="text/javascript">
+        $('.dropdown-toggle').dropdown();
+    </script>
   </body>
 </html>
