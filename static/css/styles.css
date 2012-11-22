@@ -1,5 +1,5 @@
 body{
-    background-color: #FFF;
+    background-color: #DAFB3F;
 }
 
 .container {
@@ -7,13 +7,31 @@ body{
     width: 100%;
 }
 
+.content {
+    width: 500px;
+    height: 400px;
+    margin: 50px auto 0px auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px #777;
+}
+
 #name-header{
     text-align:center;
-    margin: 50px auto;
-    font-size:36px;
+    margin: 10px auto 0px auto;
+    font-size:24px;
     font-weight:bold;
     color: #01939A;
-    min-height: 70px;
+    height: 30px;
+}
+
+#body-content {
+    height:310px;
+    padding: 10px 20px;
+    border-bottom: 1px dashed #ccc;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #links-ul { 
@@ -23,7 +41,7 @@ body{
     height:30px;
     font-family:Arial;
     font-size:0.9em;
-    width: 440px;
+    width: 350px;
 }
 #links-ul li {
     float:left;
